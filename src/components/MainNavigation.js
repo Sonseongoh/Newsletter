@@ -14,7 +14,7 @@ function MainNavigation() {
               }
               end
             >
-              Home
+              홈
             </NavLink>
           </li>
           <li>
@@ -24,7 +24,7 @@ function MainNavigation() {
                 isActive ? classes.active : undefined
               }
             >
-              Events
+              이벤트
             </NavLink>
           </li>
         </ul>
