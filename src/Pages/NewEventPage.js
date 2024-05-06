@@ -1,5 +1,7 @@
 import EventForm from "../components/EventForm";
 
-export default function NewEventPage() {
-  return <EventForm />;
+function NewEventPage() {
+  return <EventForm method="post" />;
 }
+
+export default NewEventPage;

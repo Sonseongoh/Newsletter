@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
+
 import classes from "./MainNavigation.module.css";
+import NewsletterSignup from "./NewsletterSignup";
 
 function MainNavigation() {
   return (
@@ -14,7 +16,7 @@ function MainNavigation() {
               }
               end
             >
-              홈
+              Home
             </NavLink>
           </li>
           <li>
@@ -24,11 +26,22 @@ function MainNavigation() {
                 isActive ? classes.active : undefined
               }
             >
-              이벤트
+              Events
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/newsletter"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Newsletter
             </NavLink>
           </li>
         </ul>
       </nav>
+      <NewsletterSignup />
     </header>
   );
 }
